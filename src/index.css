@@ -17,23 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Optimized scrolling performance */
-* {
-  will-change: auto;
-}
-
-/* Reduce motion for users who prefer it */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -140,24 +123,11 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* Optimized transitions for better performance */
+/* Smooth transitions for all interactive elements */
 * {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-/* Performance optimizations */
-.motion-reduce {
-  animation: none !important;
-  transition: none !important;
-}
-
-/* GPU acceleration for smooth animations */
-.gpu-accelerated {
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000px;
 }
 
 /* Loading animation */
@@ -174,33 +144,4 @@ a:focus {
   background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite;
-}
-
-/* Smooth scroll behavior with better performance */
-@supports (scroll-behavior: smooth) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-/* Optimize for touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .hover\:scale-105:hover {
-    transform: none;
-  }
-  
-  .hover\:translate-x-1:hover {
-    transform: none;
-  }
-}
-
-/* Reduce animations on low-end devices */
-@media (prefers-reduced-motion: reduce) {
-  .motion-safe\:animate-pulse {
-    animation: none;
-  }
-  
-  .motion-safe\:animate-bounce {
-    animation: none;
-  }
 }
