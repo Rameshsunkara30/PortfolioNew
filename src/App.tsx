@@ -16,10 +16,10 @@ import PowerBIProject from './assets/PowerBI Project.pdf'
 import TableauProject from './assets/Tableau project.pdf'
 import ExcelProject from './assets/Excel Project.pdf'
 import Profile from './assets/Profilenavy.png'
-import Resume from './assets/ResumeFinal.pdf'
+import Resume from './assets/Resume.pdf'
 import AIToolsCertificate from './assets/AI Tools Certificate.pdf'
 import PowerBICertificate from './assets/powerbi Certificate.pdf'
-import SQLCertificate from './assets/SQL Certificate.pdf'
+import SQLCertificate from './assets/SQL Certificate.pdf' 
 
 function App() {
   const [ref, inView] = useInView({
@@ -731,12 +731,12 @@ function App() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="relative flex items-start gap-8"
               >
-            {/*     <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center border-4 border-blue-500/30 shadow-lg shadow-blue-500/25">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center border-4 border-blue-500/30 shadow-lg shadow-blue-500/25">
                   <Briefcase size={24} className="text-white" />
                 </div>
                 
-                  <div className="flex-1 bg-gradient-to-br from-black/50 to-blue-900/20 p-8 rounded-2xl border border-blue-500/20 backdrop-blur-sm">
-                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <div className="flex-1 bg-gradient-to-br from-black/50 to-blue-900/20 p-8 rounded-2xl border border-blue-500/20 backdrop-blur-sm">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <div>
                       <h3 className="text-2xl font-bold text-blue-400 mb-2">Senior Data Analyst</h3>
                       <p className="text-blue-300 font-semibold text-lg flex items-center gap-2">
@@ -776,10 +776,10 @@ function App() {
                         <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                         <p className="text-gray-400 text-sm">Reduced spend waste costs by $100k through process optimization</p>
                       </div>
-                    </div> 
-                  </div> 
-                </div>  */}
-              </motion.div> 
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
 
               {/* Job Experience 2 */}
               <motion.div
@@ -788,7 +788,7 @@ function App() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="relative flex items-start gap-8"
               >
-                {/*      <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center border-4 border-blue-500/30 shadow-lg shadow-blue-500/25">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center border-4 border-blue-500/30 shadow-lg shadow-blue-500/25">
                   <Briefcase size={24} className="text-white" />
                 </div>
                 
@@ -833,9 +833,9 @@ function App() {
                         <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                         <p className="text-gray-400 text-sm">Supported market research projects with statistical analysis</p>
                       </div>
-                    </div>  
+                    </div>
                   </div>
-                </div> */}
+                </div>
               </motion.div>
 
               {/* Education 1 */}
